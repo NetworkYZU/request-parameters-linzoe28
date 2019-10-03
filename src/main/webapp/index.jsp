@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+    "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
     <head>
@@ -14,8 +14,12 @@
         lab3: 輸入中文試試看
         lab4: 建立一個新的 servlet，怎麼改變 action 去對應？
         -->
-        <form action="process1" method="POST">
-            name: <input type="text" name="username"></input>
+        <form action="from1" method="POST">
+            name: <input type="text" name="username"></input><br/>
+            password: <input type="password" name="pass"></input><br/>
+            source:<input type="checkbox" name="source" value="web" />web
+            <input type="checkbox" name="source" value="FB" />FB
+            <input type="checkbox" name="source" value="news" />news
             <input type="submit"/>
         </form>
     </body>

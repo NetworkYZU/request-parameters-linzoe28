@@ -32,6 +32,7 @@ public class ProcessServlet1 extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        request.setCharacterEncoding("utf-8");
         PrintWriter out = response.getWriter();
         try {
             /* TODO output your page here. You may use following sample code. */
@@ -41,7 +42,8 @@ public class ProcessServlet1 extends HttpServlet {
             out.println("<title>Servlet ProcessServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println(request.getParameter("username"));
+            out.println("1"+request.getParameter("username")+","+request.getParameter("pass"));
+            out.println(request.getParameter("pass"));
             out.println("</body>");
             out.println("</html>");
         } finally {
@@ -62,7 +64,8 @@ public class ProcessServlet1 extends HttpServlet {
             out.println("<title>Servlet ProcessServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println(request.getParameter("username"));
+            out.println("1"+request.getParameter("username")+","+request.getParameter("pass"));
+            out.println(request.getParameter("pass"));
             out.println("</body>");
             out.println("</html>");
         } finally {
